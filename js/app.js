@@ -1,3 +1,13 @@
+const $login = document.querySelector('.login')
+const $bio = document.querySelector('.bio')
+const $repositories = document.querySelector('')
+const $followers = document.querySelector('')
+const $following = document.querySelector('')
+const $city = document.querySelector('')
+const $socialLink = document.querySelector('')
+const $githhubLink = document.querySelector('')
+const $githubProfil = document.querySelector('')
+
 
 fetch(`https://api.github.com/users/${search-input}`,{
     headers:{
@@ -16,3 +26,4 @@ fetch(`https://api.github.com/users/${search-input}`,{
   .catch(error => {
     console.error(error);
   });
+

@@ -10,8 +10,9 @@ body {
 }
 
 main {
+    padding: 18px;
     margin: 0 auto;
-    width: 50%;
+    width: 90%;
 }
 
 li {
@@ -22,24 +23,82 @@ img {
     border-radius: 100%;
 }
 
+form {
+    position: relative;
+}
+
+.devfind-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.devfind-container li {
+    text-transform: uppercase;
+    display: flex;
+    cursor: pointer;
+}
+
+.devfind {
+    font-weight: bold;
+    font-size: 24px;
+}
+
 .search-input {
     width: 100%;
     height: 70px;
     border: none;
     border-radius: 16px;
     padding: 22px;
+    font-size: 12px;
 }
 
 .cta {
-    width: 10%;
+    width: 25%;
     height: 50px;
     background-color: var(--dark-blue);
     border: none;
     border-radius: 16px;
+    color: white;
+    position: relative;
+    bottom: 60px;
+    left: 215px; 
+    font-size: 12px;
 }
 
 .user-card {
     background-color: white;
     border-radius: 16px;
     padding: 48px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    main {
+        width: 50%;
+    }
+
+
+    .search-input {
+        width: 100%;
+        height: 70px;
+        border: none;
+        border-radius: 16px;
+        padding: 22px;
+        font-size: 18px;
+    }
+
+    .cta {
+        width: 10%;
+        font-size: 18px;
+        left: 780px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    
 }
